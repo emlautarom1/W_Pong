@@ -7,14 +7,23 @@ const PLAYER_H = HEIGHT / 6;
 canvas.width = WIDTH;
 canvas.height = HEIGHT;
 
-const pong = new Pong(canvas);
+window.onload = () => {
+    hideLoadMessage();
+    
+    const pong = new Pong(canvas);
 
-// Input handlers
-canvas.onmousemove = e => {
-    const scale = e.offsetY / e.target.getBoundingClientRect().height;
-    pong.players[0].pos.y = HEIGHT * scale;
+    // Input handlers
+    canvas.onmousemove = e => {
+        const scale = e.offsetY / e.target.getBoundingClientRect().height;
+        pong.players[0].pos.y = HEIGHT * scale;
+    }
+
+    canvas.onclick = () => {
+        pong.start();
+    }
 }
 
-canvas.onclick = () => {
-    pong.start();
+function hideLoadMessage() {
+    document.getElementById("game").style.display = 'flex';
+    document.getElementById("loading").style.display = 'none';
 }

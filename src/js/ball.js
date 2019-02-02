@@ -5,7 +5,6 @@ class Ball extends Rect {
         this.pos.y = HEIGHT / 2;
         this.vel = new Vec2d();
         this.reset();
-        this.startMoving();
     }
 
     isMoving() {

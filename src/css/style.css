@@ -47,6 +47,19 @@ audio {
 
 #game {
     background-color: black;
-    display: flex;
     justify-content: center;
+    display: none;
+}
+
+#loading {
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#loading p {
+    font-size: 10vh;
+    color: black;
 }
