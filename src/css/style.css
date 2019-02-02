@@ -1,0 +1,52 @@
+@font-face {
+    font-family: 'Square';
+    src: url('../font/Square.ttf');
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Square', Fallback, sans-serif;
+    color: white;
+    image-rendering: pixelated;
+    -webkit-user-select: none;
+    /* Safari */
+    -moz-user-select: none;
+    /* Firefox */
+    -ms-user-select: none;
+    /* IE10+/Edge */
+    user-select: none;
+    /* Standard */
+}
+
+.score {
+    font-size: 10vh;
+    position: absolute;
+}
+
+audio {
+    display: none;
+}
+
+#player1 {
+    left: 25vw;
+}
+
+#player2 {
+    left: 75vw;
+}
+
+#vline {
+    position: absolute;
+    top: 0;
+    left: 50vw;
+    height: 100vh;
+    opacity: 0.2;
+    border-left: dashed 5px white;
+}
+
+#game {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+}
