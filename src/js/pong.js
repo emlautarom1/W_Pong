@@ -34,9 +34,8 @@ class Pong {
     start() {
         if (!this.ball.isMoving()) {
             this.ball.startMoving();
+            this.audio.bounce.play();
         }
-        
-        this.audio.bounce.play();
     }
 
     clearScreen() {
