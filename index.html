@@ -6,26 +6,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="src/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="shortcut icon" type="image/png" href="/src/icon.png"/>
     <title>W-Pong</title>
 </head>
 
 <body>
-    <div id="loading">
-        <p>Game is loading.</p>
-        <br>
-        <p>Please, wait...</p>
-    </div>
-    <div id="game">
-        <span id="vline"></span>
-        <span class="score" id="player1">0</span>
-        <span class="score" id="player2">0</span>
-        <canvas id="canvas"></canvas>
+    <div id="content">
+        <div id="loading">
+            <p>Game is loading.</p>
+            <br>
+            <p>Please, wait...</p>
+        </div>
+        <div id="game">
+            <span id="vline"></span>
+            <span class="score" id="player1">0</span>
+            <span class="score" id="player2">0</span>
+            <canvas id="canvas"></canvas>
+        </div>
     </div>
 
     <audio id="bounce" src="src/audio/bounce.ogg" type="audio/ogg"></audio>
     <audio id="lose" src="src/audio/lose.ogg" type="audio/ogg"></audio>
     <audio id="wall" src="src/audio/wall.ogg" type="audio/ogg"></audio>
 
+    <footer>
+        <p>
+            Made by Martin Emanuel | 2019 | <a href="https://github.com/lautaroem1/W_Pong">GitHub</a>
+        </p>
+    </footer>
 </body>
 <script src="src/js/generics.js"></script>
 <script src="src/js/player.js"></script>
